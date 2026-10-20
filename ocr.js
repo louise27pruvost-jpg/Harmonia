@@ -224,7 +224,7 @@ function prepareCanvas(img) {
 let ocrWorker = null;
 /** Adresse absolue du dossier lang/ de l'application (null en fichier local, où fetch est refusé). */
 function localLangPath() {
-  try { if (!/^https?:$/.test(location.protocol)) return null; return new URL('lang', document.baseURI).href; }
+  try { if (!/^https?:$/.test(location.protocol)) return null; return new URL('.', document.baseURI).href.replace(/\/$/, ''); }
   catch (e) { return null; }
 }
 async function ocrCanvas(canvas, progress) {

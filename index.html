@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Harmonia</title>
+<meta name="description" content="Harmonia, mon carnet musical : paroles et accords alignés, transposition, diagrammes, accordeur et défilement automatique. Gratuit et sans publicité.">
+<meta name="theme-color" content="#80617D">
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/svg+xml" href="icon.svg">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Harmonia">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Manrope:wght@500;600;700;800&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<noscript><p style="padding:24px">Harmonia a besoin de JavaScript pour fonctionner. Activez-le dans votre navigateur.</p></noscript>
+<div class="app" id="app">
+  <nav class="sidenav" aria-label="Navigation principale">
+    <div class="brand"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V6l10-2v12"/><circle cx="6.5" cy="18" r="2.5"/><circle cx="16.5" cy="16" r="2.5"/></svg></span>Harmonia</div>
+    <div id="sidenav-links"></div>
+    <p class="nav-foot">Gratuit, sans publicité. Vos chansons restent dans ce navigateur.</p>
+  </nav>
+  <main id="main" tabindex="-1"></main>
+  <nav class="tabbar" id="tabbar" aria-label="Navigation principale"></nav>
+</div>
+<div id="chord-panel" class="chord-panel" role="dialog" aria-modal="false" aria-labelledby="cp-name" hidden></div>
+<dialog id="modal"></dialog>
+<div id="toasts" aria-live="polite" aria-atomic="false"></div>
+<script src="util.js"></script>
+<script src="music.js"></script>
+<script src="theme.js"></script>
+<script src="chordpro.js"></script>
+<script src="instruments.js"></script>
+<script src="catalog.js"></script>
+<script src="data.js"></script>
+<script src="audio.js"></script>
+<script src="import.js"></script>
+<script src="ocr.js"></script>
+<script src="musicxml.js"></script>
+<script src="practice.js"></script>
+<script src="listen.js"></script>
+<script src="shell.js"></script>
+<script src="reader.js"></script>
+<script src="editor.js"></script>
+<script src="playlists.js"></script>
+<script src="tuner.js"></script>
+<script src="settings.js"></script>
+<script src="progress.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

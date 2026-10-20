@@ -5,10 +5,10 @@ const VERSION = 'harmonia-1.7.0';
 const APP_CACHE = VERSION + '-app';
 const FONT_CACHE = 'harmonia-fonts';
 const APP_FILES = [
-  './', 'index.html', 'manifest.webmanifest', 'css/styles.css',
-  'js/util.js', 'js/music.js', 'js/theme.js', 'js/chordpro.js', 'js/instruments.js', 'js/catalog.js', 'js/data.js', 'js/audio.js', 'js/import.js', 'js/ocr.js', 'js/musicxml.js', 'js/practice.js', 'js/listen.js',
-  'js/ui/shell.js', 'js/ui/reader.js', 'js/ui/editor.js', 'js/ui/playlists.js', 'js/ui/tuner.js', 'js/ui/settings.js', 'js/ui/progress.js', 'js/app.js',
-  'icons/icon-192.png', 'icons/icon-512.png', 'icons/icon-maskable-512.png', 'icons/apple-touch-icon.png', 'icons/favicon-32.png', 'icons/icon.svg'
+  './', 'index.html', 'manifest.webmanifest', 'styles.css',
+  'util.js', 'music.js', 'theme.js', 'chordpro.js', 'instruments.js', 'catalog.js', 'data.js', 'audio.js', 'import.js', 'ocr.js', 'musicxml.js', 'practice.js', 'listen.js',
+  'shell.js', 'reader.js', 'editor.js', 'playlists.js', 'tuner.js', 'settings.js', 'progress.js', 'app.js',
+  'icon-192.png', 'icon-512.png', 'icon-maskable-512.png', 'apple-touch-icon.png', 'favicon-32.png', 'icon.svg'
 ];
 
 self.addEventListener('install', (event) => {
